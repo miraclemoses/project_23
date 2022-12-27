@@ -1,4 +1,4 @@
-# PERSISTING DATA IN KUBERNETES
+# AWESOME DOCUMENTATION OF PROJECT 23: PERSISTING DATA IN KUBERNETES
 
 The pods created in Kubernetes are ephemeral, they don't run for long. When a pod dies, any data that is not part of the container image will be lost when the container is restarted because Kubernetes is best at managing stateless applications which means it does not manage data persistence. To ensure data persistent, the PersistentVolume resource is implemented to acheive this.
 
@@ -196,5 +196,6 @@ spec:
         persistentVolumeClaim:
           claimName: nginx-volume-claim
 ```
-- The '/tmp/tony' directory will be persisted, and any data written in there will be stored permanetly on the volume, which can be used by another Pod if the current one gets replaced.
+
+-The '/tmp/miracle' directory will be persisted, and any data written in there will be stored permanetly on the volume, which can be used by another Pod if the current one gets replaced.
 
